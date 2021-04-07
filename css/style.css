@@ -3,7 +3,9 @@
 }
 
 body{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Mulish', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
 }
 
 .header{
@@ -14,6 +16,8 @@ body{
 
     display: flex;
     align-items: center;
+
+    margin-bottom: 30px;
 }
 
 .menu-button{
@@ -61,6 +65,7 @@ body{
     background-color: transparent;
     border: none;
     padding: 12px 23px;
+    width: 100%;
 }
 
 .button-search{
@@ -99,5 +104,57 @@ body{
 .user-avatar{
     width: 40px;
     height: 40px;
+    border-radius: 50%;
+}
+
+
+.sidebar{
+    padding-left: 32px;
+}
+.nav-menu{
+    list-style: none;
+    margin-top: 0px;
+    padding: 0px;
+    margin-bottom: 60px;
+}
+
+.nav-item:not(:last-child){
+    margin-bottom: 28px;
+}
+
+.nav-link{
+    text-decoration: none;
+    color: #898989;
+    display: flex;
+    align-items: center;
+}
+
+.nav-link .icon{
+    fill: #898989;
+}
+.nav-text{
+    margin-left: 13px;
+}
+
+.nav-link:hover,
+.nav-link:focus{
+    color: #FF0000; 
+}
+
+.nav-link:hover .icon,
+.nav-link:focus .icon{
+    fill: #FF0000;
+}
+
+.nav-title{
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 23px;
+    margin-bottom: 30px;
+}
+
+.nav-images{
+    width: 26px;
+    height: 26px;
     border-radius: 50%;
 }
