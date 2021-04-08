@@ -18,6 +18,13 @@ body{
     align-items: center;
 
     margin-bottom: 30px;
+
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    background-color: #FFF;
+    z-index: 99;
 }
 
 .menu-button{
@@ -110,12 +117,34 @@ body{
 
 .sidebar{
     padding-left: 32px;
+
+    position: fixed;
+    left: 0px;
+    top: 114px;
+    height: calc( 100% - 114px );
+    overflow-y: scroll;
+    width: 18%;
+    background-color: #FFF;
 }
+
+.content{
+    margin-top: 84px;
+    padding-top: 30px;
+    padding-left: 20%;
+
+    width: 100%;
+
+}
+
 .nav-menu{
     list-style: none;
     margin-top: 0px;
     padding: 0px;
     margin-bottom: 60px;
+}
+
+.nav-subscriptions{
+    margin-bottom: 104px;
 }
 
 .nav-item:not(:last-child){
@@ -157,4 +186,218 @@ body{
     width: 26px;
     height: 26px;
     border-radius: 50%;
+}
+
+
+.chanel{
+    position: relative;
+    margin-bottom: 50px;
+}
+.chanel-title{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    margin-bottom: 30px;
+}
+.chanel-avatar{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+.chanel-text{
+    font-size: 26px;
+    line-height: 31px;
+    color: #19202C;
+    font-weight: bold;
+    
+}
+
+
+.video-card{
+    width: 250px;
+}
+
+.video-thumb{
+    position: relative;
+    border-radius: 14px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+.thumbnail{
+    width: 250px;
+    height: 150px;
+    max-width: 100%;
+    object-fit: cover;
+}
+.video-time{
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+
+    background-color: rgba(0, 0, 0, .4);
+    border-radius: 12px;
+    color: #FFF;
+    font-size: 14px;
+    line-height: 18px;
+
+    padding: 3px 9px;
+}
+
+.video-title{
+    text-decoration: none;
+    color: #19202C;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 4px;
+}
+
+.video-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 13px;
+    line-height: 16px;
+    color: #C2C2C2;
+}
+
+.video-view::after{
+    content: '';
+    width: 2px;
+    height: 2px;
+    background-color: #C2C2C2;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0px 4px;
+}
+
+.video-chanel{
+    text-decoration: none;
+    color: #C2C2C2;
+}
+
+.slider-buttons{
+    position: absolute;
+    top: 10px;
+    right: 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 66px;
+}
+
+.chanel-button{
+    cursor: pointer;
+}
+.chanel-button-icon{
+    opacity: .24;
+}
+.chanel-button:focus{
+    outline: none;
+}
+
+.chanel-button-icon:hover,
+.chanel-button-icon:focus{
+    opacity: .7;
+    outline: none;
+}
+
+
+.recommended{
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.recommended-text{
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 33px;
+    margin-bottom: 30px;
+}
+.recommended .slider-buttons{
+    top: 5px;
+}
+
+.recommended .video-card{
+    width: 100%;
+}
+.recommended .thumbnail{
+    width: 540px;
+    height: 250px;
+}
+
+.recommended-button{
+    cursor: pointer;
+}
+.recommended-button-icon{
+    opacity: .24;
+}
+.recommended-button:focus{
+    outline: none;
+}
+
+.recommended-button-icon:hover,
+.recommended-button-icon:focus{
+    opacity: .7;
+    outline: none;
+}
+
+.chanel-recommended{
+    position: relative;
+}
+.chanel-recommended-info{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    
+}
+.chanel-recommended-title{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    
+}
+
+.chanel-recommended-text{
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 33px;
+    color: #19202C;
+    margin-right: 19px;
+}
+
+.chanel-recommended-description{
+    font-size: 16px;
+    line-height: 20px;
+    color: #C2C2C2;
+}
+
+.chanel-btn{
+    border: none;
+    outline: none;
+    background: #FF0000;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+}
+
+.chanel-recommended-button{
+    cursor: pointer;
+}
+.chanel-recommended-button-icon{
+    opacity: .24;
+}
+.chanel-recommended-button:focus{
+    outline: none;
+}
+
+.chanel-recommended-button-icon:hover,
+.chanel-recommended-button-icon:focus{
+    opacity: .7;
+    outline: none;
 }
