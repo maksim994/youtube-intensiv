@@ -13,3 +13,6 @@
 - svgsprit.es —  генератор SVG-спрайтов для иконок
 - figma.com/file/YXgO7HaWtFKpAHIi7u9v0L/YouTube-Redesign-Concept?node-id=0%3A1 - Макет
 - fonts.google.com - шрифты от Google
+
+
+Демо - https://mvmolkov.ru/dev/youtube-intensiv/
