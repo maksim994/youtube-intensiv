@@ -36,6 +36,14 @@
             </button>
         </div>
 
+        <div class="mobile-search">
+            <button type="submit" class="button-search">
+                <svg class="icon icon-search" width="19" height="19">
+                    <use xlink:href="images/icons.svg#search"></use>
+                </svg>
+            </button>
+        </div>
+
         <div class="icons">
             <a href="#" class="icons-link">
                 <svg class="icon icon-video" width="27" height="20">
@@ -59,6 +67,44 @@
         </a>
         <!-- /.user -->
     </header>
+
+    <div class="mobile-sitebar">
+        <ul class="nav-menu">
+            <li class="nav-item">
+                <a href="#" class="nav-link nav-active">
+                    <svg class="icon icon-home" width="20" height="19">
+                        <use xlink:href="images/icons.svg#home"></use>
+                    </svg>
+                    <span class="nav-text">Главная</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">
+                    <svg class="icon icon-trending" width="16" height="21">
+                        <use xlink:href="images/icons.svg#trending"></use>
+                    </svg>
+                    <span class="nav-text">Тренды</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">
+                    <svg class="icon icon-subscriptions" width="18" height="18">
+                        <use xlink:href="images/icons.svg#subscriptions"></use>
+                    </svg>
+                    <span class="nav-text">Подписки</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">
+                    <svg class="icon icon-library" width="20" height="16">
+                        <use xlink:href="images/icons.svg#library"></use>
+                    </svg>
+                    <span class="nav-text">Библиотека</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!-- /.mobile-sitebar -->
 
     <div class="container">
         <aside class="sidebar">
@@ -91,7 +137,7 @@
                 </ul>
 
 
-                <ul class="nav-menu">
+                <ul id="sub-menu" class="nav-menu">
                     <li class="nav-item">
                         <a href="#" class="nav-link">
                             <svg class="icon icon-library" width="20" height="16">
@@ -148,15 +194,13 @@
                             <span class="nav-text">Игры</span>
                         </a>
                     </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">
-                            <svg class="icon icon-show-more" width="14" height="8">
-                                <use xlink:href="images/icons.svg#show-more"></use>
-                            </svg>
-                            <span class="nav-text">Показать больше</span>
-                        </a>
-                    </li>
                 </ul>
+                <a href="#" class="nav-link show-more">
+                    <svg class="icon icon-show-more" width="14" height="8">
+                        <use xlink:href="images/icons.svg#show-more"></use>
+                    </svg>
+                    <span class="nav-text">Показать больше</span>
+                </a>
             </nav>
 
             <h2 class="nav-title">Подписки</h2>
@@ -478,8 +522,11 @@
                 <div class="chanel-recommended-info">
                     <a href="#" class="chanel-recommended-title">
                         <img src="./images/subscriptions/emma.png" alt="Dollie Blair" class="chanel-avatar">
-                        <span class="chanel-recommended-text">Food & Drink</span>
-                        <span class="chanel-recommended-description">Recommended channel for you</span>
+
+                        <div class="chanel-recommended-name">
+                            <span class="chanel-recommended-text">Food & Drink</span> 
+                            <span class="chanel-recommended-description">Recommended channel for you</span>
+                        </div>                       
                     </a>
 
                     <button class="chanel-btn">Подписчиков 2.3 млн</button>
